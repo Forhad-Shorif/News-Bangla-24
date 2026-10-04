@@ -10,13 +10,13 @@ const Header = () => {
     // console.log(date);
 
     return (
-        <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all">
+        <header className="sticky top-[-140px] z-100 bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-2 md:gap-4">
 
                 {/* Left Side Spacer (Keeps the middle section centered) */}
                 <div className="w-1/4 hidden md:block"></div>
 
-                {/* Center Side (Visually centered with balanced internal gap) */}
+                {/* Center Side Logo */}
                 <div className="flex items-center justify-center gap-2.5 sm:gap-3 w-full md:w-2/4 group cursor-pointer min-w-0">
                     <div className="relative shrink-0 overflow-hidden rounded-xl p-1 bg-gradient-to-tr from-red-500 to-orange-400 group-hover:scale-105 transition-transform duration-300 shadow-md shadow-red-500/20">
                         <Image
@@ -37,7 +37,7 @@ const Header = () => {
                     </div>
                 </div>
 
-                {/* Right Side (Auth Buttons) */}
+                {/* Sing Buttons */}
                 <div className="flex items-center justify-end gap-1.5 sm:gap-3 w-1/4 shrink-0">
                     <button className="px-3 sm:px-5 py-1.5 sm:py-2 text-xs sm:text-sm text-gray-700 font-semibold rounded-full shadow-md shadow-red-500/20 hover:shadow-lg hover:shadow-red-500/30 active:scale-95 transition-all duration-200 whitespace-nowrap">
                      সাইন ইন

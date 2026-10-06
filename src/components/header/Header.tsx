@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import NavLink from '@/components/header/NavLink'
+import UserInfo from './UserInfo';
 
 const Header = () => {
 
@@ -38,19 +39,12 @@ const Header = () => {
                 </div>
 
                 {/* Sing Buttons */}
-                <div className="flex items-center justify-end gap-1.5 sm:gap-3 w-1/4 shrink-0">
-                    <button className="px-3 sm:px-5 py-1.5 sm:py-2 text-xs sm:text-sm text-gray-700 font-semibold rounded-full shadow-md shadow-red-500/20 hover:shadow-lg hover:shadow-red-500/30 active:scale-95 transition-all duration-200 whitespace-nowrap">
-                     সাইন ইন
-                    </button>
-                    <button className="px-3 sm:px-5 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold text-white bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 rounded-full shadow-md shadow-red-500/20 hover:shadow-lg hover:shadow-red-500/30 active:scale-95 transition-all duration-200 whitespace-nowrap">
-                        সাইন আপ
-                    </button>
-                </div>
+               <UserInfo/>
 
             </div>
-            
-               <NavLink/> 
-            
+
+            <NavLink />
+
         </header>
     );
 };

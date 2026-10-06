@@ -1,8 +1,11 @@
+import dns from 'node:dns';
+ dns.setServers(['8.8.8.8', '8.8.4.4'])
 import type { Metadata } from "next";
 import { Noto_Serif_Bengali } from "next/font/google";
 import "./globals.css";
 import Marquee from "@/components/header/Marquee";
 import Header from "@/components/header/Header";
+import { ToastContainer } from "react-toastify";
 
 
 const notoSerifBengali = Noto_Serif_Bengali({
@@ -25,6 +28,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Header />
         <Marquee />
         {children}
+         <ToastContainer />
       </body>
     </html>
   );
